@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - Mi Empresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="js/budget.js">
+</head>
+<body>
+    <header>
+        <h1>Mi Empresa</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Presupuesto</h2>
+        <form id="presupuestoForm">
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="15" pattern="[A-Za-z]+" required><br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" maxlength="40" pattern="[A-Za-z]+" required><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto">
+                    <option value="producto1" data-precio="100">Producto 1 - $100</option>
+                    <option value="producto2" data-precio="200">Producto 2 - $200</option>
+                    <option value="producto3" data-precio="300">Producto 3 - $300</option>
+                </select><br>
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" id="plazo" name="plazo" min="1" max="12"><br>
+                <label>Extras:</label><br>
+                <input type="checkbox" id="extra1" name="extras" value="extra1" data-precio="50"> Extra 1 - $50<br>
+                <input type="checkbox" id="extra2" name="extras" value="extra2" data-precio="100"> Extra 2 - $100<br>
+                <input type="checkbox" id="extra3" name="extras" value="extra3" data-precio="150"> Extra 3 - $150<br>
+                
+                <p>Presupuesto Total: $<span id="total">0</span></p>
+            </fieldset>
+            
+            <label for="condiciones">Aceptar condiciones:</label>
+            <input type="checkbox" id="condiciones" name="condiciones" required><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mi Empresa</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>Dirección de la empresa</p>
+        <p>Aviso legal</p>
+    </footer>
+    
+    <!-- <script src="../js/budget.js"></script> -->
+</body>
+</html>
+

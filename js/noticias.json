@@ -1,0 +1,14 @@
+{
+    "noticias": [
+        {
+            "titulo": "Productos nuevos de PC",
+            "contenido": "Descubre los nuevos productos que tenemos en stock...",
+            "enlace": "producto-nuevo.html"
+        },
+        {
+            "titulo": "Guía para montar un ordenador",
+            "contenido": "Sigue nuestra guía paso a paso para montar tu propio ordenador...",
+            "enlace": "guia-montar-pc.html"
+        }
+    ]
+}
